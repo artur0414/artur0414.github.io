@@ -1,0 +1,26 @@
+{
+  "name": "light-aircraft",
+  "version": "1.0.0",
+  "description": "sass illustration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Acosta",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^5.0.0",
+    "sass": "^1.71.1"
+  },
+  "homepage": "https://github.com/artur0414/light-aircraft.git",
+  "dependencies": {
+    "better-scroll": "^2.5.1",
+    "browser-sync": "^3.0.2"
+  }
+}
