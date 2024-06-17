@@ -1,0 +1,157 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.wings{
+    position: absolute;
+
+    width: 370px;
+    height: 70px;
+
+    @include m.center-horizontal(50%);
+ 
+    transform-style: preserve-3d;
+     
+    transform: translateZ(120px) rotateY(-5deg); 
+    bottom: 10px;  
+     
+
+    .wing-bottom{
+        position: absolute; 
+        width: 100%;
+        height: 100%;
+
+        background-color: v.$brown2;
+
+        bottom: 5px; 
+
+        transform: rotateX(85deg) translateX(-185px) translateZ(-50px);
+  
+        border-radius: 10px;
+
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+ 
+    }   
+
+    .wing-top{
+        position: absolute; 
+        width: 100%;
+        height: 100%;
+
+        background-color: v.$brown2;
+
+        bottom: 5px; 
+
+        transform: rotateX(85deg) translateX(-185px) translateZ(90px);
+  
+        border-radius: 10px; 
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    }   
+    .wing-left{
+        position: absolute;
+        width: 60px;
+        height: 135px; 
+
+        border: 5px solid v.$brown2; 
+  
+        transform: rotateY(-89deg) translateZ(170px) rotate(5deg) ;   
+      
+        bottom: -11px;      
+  
+    }   
+ 
+    .wing-right{
+        position: absolute;
+        width: 60px;
+        height: 135px; 
+
+        border: 5px solid v.$brown2; 
+  
+        transform: rotateY(-95deg) translateZ(-100px) rotate(5deg) ;    
+     
+        bottom: -11px;      
+
+    }    
+
+
+}     
+
+.back-wings{
+    position: absolute;
+  
+    width: 200px; 
+    height: 20px; 
+ 
+    transform-style: preserve-3d;
+
+      
+    transform: translateZ(-140px) rotateX(20deg) translateX(-50%);  
+    bottom: 120px;    
+ 
+    left: 50%;   
+
+    .wing-front{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background-color: v.$brown1; 
+        transform: translateZ(25px);
+    } 
+
+    .wing-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+ 
+        background-color: v.$brown1; 
+        transform: translateZ(-25px); 
+ 
+    }
+
+    .wing-top{ 
+        position: absolute;
+        width: 100%;
+        height: 50px;
+
+        background-color: v.$brown1; 
+
+        transform: rotateX(-90deg) translateZ(-25px);   
+    }
+
+    .wing-bottom{ 
+        position: absolute;
+        width: 100%;
+        height: 50px;
+
+        background-color: v.$brown1; 
+
+        transform: rotateX(-90deg) translateZ(-5px);   
+    }
+
+    .wing-left{
+        position: absolute;
+        width: 50px;
+        height: 100%;
+
+        background-color: v.$brown1; 
+ 
+        transform: rotateY(-90deg) translateZ(25px);  
+    } 
+
+    .wing-right{
+        position: absolute;
+        width: 50px;
+        height: 100%;
+
+        background-color: v.$brown2; 
+ 
+        transform: rotateY(90deg) translateZ(175px);  
+    }  
+ 
+ 
+}  
+         
+ 
+   

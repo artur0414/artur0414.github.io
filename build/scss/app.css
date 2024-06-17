@@ -42,7 +42,7 @@ body {
 .light-aircraft-body .front {
   width: 100%;
   height: 100%;
-  transform: translateZ(191px) rotateX(-5deg);
+  transform: translateZ(185px);
   background-color: #A68961;
 }
 .light-aircraft-body .right {
@@ -113,45 +113,102 @@ body {
   transform: rotateX(-90deg);
 }
 
-.front {
+.wings {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   transform-style: preserve-3d;
+  transform: translateZ(120px) rotateY(-5deg);
+  bottom: 10px;
 }
-.front div {
+.wings .wing-bottom {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #5C5038;
+  bottom: 5px;
+  transform: rotateX(85deg) translateX(-185px) translateZ(-50px);
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+.wings .wing-top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #5C5038;
+  bottom: 5px;
+  transform: rotateX(85deg) translateX(-185px) translateZ(90px);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.wings .wing-left {
+  position: absolute;
+  width: 60px;
+  height: 135px;
+  border: 5px solid #5C5038;
+  transform: rotateY(-89deg) translateZ(170px) rotate(5deg);
+  bottom: -11px;
+}
+.wings .wing-right {
+  position: absolute;
+  width: 60px;
+  height: 135px;
+  border: 5px solid #5C5038;
+  transform: rotateY(-95deg) translateZ(-100px) rotate(5deg);
+  bottom: -11px;
+}
+
+.back-wings {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  transform-style: preserve-3d;
+  transform: translateZ(-140px) rotateX(20deg) translateX(-50%);
+  bottom: 120px;
+  left: 50%;
+}
+.back-wings .wing-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: #A68961;
+  transform: translateZ(25px);
 }
-.front .front-front {
+.back-wings .wing-back {
   position: absolute;
   width: 100%;
-  height: 180%;
-  bottom: 0;
-  transform: translateZ(32px);
-}
-.front .front-back {
-  width: 100%;
-  height: 180%;
-  bottom: 0;
-  transform: translateZ(-32px);
-}
-.front .front-right {
-  width: 100%;
-  height: 180%;
-  transform: rotateY(-90deg) translateZ(-32px);
-  bottom: 0;
-}
-.front .front-left {
-  width: 100%;
-  height: 180%;
-  transform: rotateY(-90deg) translateZ(32px);
-  bottom: 0;
-}
-.front .front-bottom {
-  width: 100%;
   height: 100%;
-  transform: rotateX(90deg) translateZ(-32px);
+  background-color: #A68961;
+  transform: translateZ(-25px);
 }
-.front .front-top {
+.back-wings .wing-top {
+  position: absolute;
   width: 100%;
+  height: 50px;
+  background-color: #A68961;
+  transform: rotateX(-90deg) translateZ(-25px);
+}
+.back-wings .wing-bottom {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: #A68961;
+  transform: rotateX(-90deg) translateZ(-5px);
+}
+.back-wings .wing-left {
+  position: absolute;
+  width: 50px;
   height: 100%;
-  transform: rotateX(90deg) translateZ(80px);
+  background-color: #A68961;
+  transform: rotateY(-90deg) translateZ(25px);
+}
+.back-wings .wing-right {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-color: #5C5038;
+  transform: rotateY(90deg) translateZ(175px);
 }
