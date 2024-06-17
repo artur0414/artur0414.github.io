@@ -20,7 +20,7 @@
         width: 100%;
         height: 100%;
 
-        background-color: v.$brown2;
+        background-color: v.$color3;
 
         bottom: 5px; 
 
@@ -37,7 +37,7 @@
         width: 100%;
         height: 100%;
 
-        background-color: v.$brown2;
+        background-color: v.$color4;
 
         bottom: 5px; 
 
@@ -53,7 +53,7 @@
         width: 60px;
         height: 135px; 
 
-        border: 5px solid v.$brown2; 
+        border: 5px solid v.$color3; 
   
         transform: rotateY(-89deg) translateZ(170px) rotate(5deg) ;   
       
@@ -66,7 +66,7 @@
         width: 60px;
         height: 135px; 
 
-        border: 5px solid v.$brown2; 
+        border: 5px solid v.$color3; 
   
         transform: rotateY(-95deg) translateZ(-100px) rotate(5deg) ;    
      
@@ -95,9 +95,9 @@
         position: absolute;
         width: 100%;
         height: 100%;
-
-        background-color: v.$brown1; 
-        transform: translateZ(25px);
+ 
+        background-color: v.$color2; 
+        transform: translateZ(25px); 
     } 
 
     .wing-back{
@@ -105,7 +105,7 @@
         width: 100%;
         height: 100%;
  
-        background-color: v.$brown1; 
+        background-color: v.$color2; 
         transform: translateZ(-25px); 
  
     }
@@ -115,7 +115,7 @@
         width: 100%;
         height: 50px;
 
-        background-color: v.$brown1; 
+        background-color: v.$color2; 
 
         transform: rotateX(-90deg) translateZ(-25px);   
     }
@@ -125,7 +125,7 @@
         width: 100%;
         height: 50px;
 
-        background-color: v.$brown1; 
+        background-color: v.$color2; 
 
         transform: rotateX(-90deg) translateZ(-5px);   
     }
@@ -135,7 +135,7 @@
         width: 50px;
         height: 100%;
 
-        background-color: v.$brown1; 
+        background-color: v.$color3; 
  
         transform: rotateY(-90deg) translateZ(25px);  
     } 
@@ -145,13 +145,13 @@
         width: 50px;
         height: 100%;
 
-        background-color: v.$brown2; 
+        background-color: v.$color3; 
  
-        transform: rotateY(90deg) translateZ(175px);  
-    }  
+        transform: rotateY(90deg) translateZ(176px);  
+    }    
  
  
-}  
-         
+}   
+          
  
    

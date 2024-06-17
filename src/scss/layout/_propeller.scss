@@ -1,0 +1,59 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.front{
+    transform-style: preserve-3d;
+
+    .propeller{
+        position: absolute;
+        width: 5px;
+        height: 5px; 
+
+        left: 50%;
+        top: 50%;
+
+        transform:  translateX(-50%) translateY(-50%) translateZ(-180px);   
+        transform-style: preserve-3d;  
+
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+  
+
+
+        .front{    
+            position: relative;
+            width: 100%; 
+            height: 50px;    
+
+            background-color: black;   
+            
+            border-radius: 40%;
+
+            animation: rotar 80s linear ;
+     
+            &::before{   
+                content: ""; 
+                position: absolute;
+                width: 100%; 
+                height: 100% ;  
+
+                background-color: v.$color3; 
+                
+                rotate: 90deg; 
+                
+                border-radius: 40%; 
+            } 
+        }    
+
+        @keyframes rotar { 
+            100%{
+                rotate: 50000000000000deg; 
+            }       
+        }
+ 
+        
+             
+    } 
+    
+}
