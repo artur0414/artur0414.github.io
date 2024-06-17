@@ -1,9 +1,37 @@
 @use 'variables' as v;
 
+html,
 body{
-    background-color: #000;
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-h1{
-    background-color: red;
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
+
+.br{
+    border-radius: 50%;
+}
+
+.light-aircraft{
+    position: relative;
+
+    width: 500px;
+    height: 500px;
+
+    // transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+}
+
+

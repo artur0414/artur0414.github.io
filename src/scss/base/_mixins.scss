@@ -1,1 +1,34 @@
 @use 'variables' as v;
+
+@mixin position-center($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translate(-50%, -50%);
+  }
+
+  @mixin center-horizontal($left) {
+    position: absolute;
+    left: $left;
+    transform: translateX(-50%);
+  }
+
+  @mixin pseudo-elements{
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+  }
+
+  @mixin pseudo-elements-complete($width, $height, $background){
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: $width;
+      height: $height;
+      background-color: $background
+    }
+  }
+  
