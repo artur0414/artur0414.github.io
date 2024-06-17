@@ -10,14 +10,30 @@ body{
     box-sizing: border-box;
 }
 
-body{
-
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
+    background: linear-gradient(120deg, #87CEEB, #d5e4f3); /* Colores azules para simular un cielo despejado */
+    animation: skyanimation 50s ease infinite;
+    background-size: 400% 400%;
+
+    @keyframes skyanimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0 50%; 
+        }
+    } 
 }
+
+ 
+
 
 .br{
     border-radius: 50%;
