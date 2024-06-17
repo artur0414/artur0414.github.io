@@ -81,7 +81,6 @@
     transform-style: preserve-3d; 
 
     div{
-        background-color: v.$brown1; 
         position: absolute;
     }
 
@@ -90,14 +89,16 @@
         height: 280%;
 
         transform: rotateY(90deg) translateZ(-35px);   
-        bottom: 0;               
+        bottom: 0;       
+        background-color: v.$brown1;         
     }       
     .back-left{
         width: 110%;
         height: 280%;
 
         transform: rotateY(90deg) translateZ(30px);   
-        bottom: 0;               
+        bottom: 0;   
+        background-color: v.$brown1;             
     } 
 
  
@@ -109,6 +110,7 @@
         transform: translateZ(-35px); 
         
         bottom: 0;
+
     }  
 
     .back-back{
@@ -117,6 +119,7 @@
 
         transform: translateZ(35px); 
         bottom: 0;
+        background-color: v.$brown1; 
     }
 
 
@@ -125,5 +128,6 @@
         height: 110%;
 
         transform: rotateX(-90deg); 
+        background-color: v.$brown1; 
     } 
 }  
