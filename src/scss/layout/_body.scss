@@ -25,7 +25,7 @@
         height: 100%;
 
         transform: translateZ(185px);  
-        background-color: v.$brown1;  
+        background-color: v.$color1;   
     }    
      
    
@@ -33,10 +33,10 @@
     .right{
         width: 370px;
         height: 100%;
-
+ 
 
         transform: rotateY(-90deg) translateZ(121px);
-        background-color: v.$brown1;
+        background-color: v.$color2;
     }
 
     .left{
@@ -44,15 +44,16 @@
         height: 100%;
 
         transform: rotateY(90deg) translateZ(-185px);  
-        background-color: v.$brown1;
+        background-color: v.$color2;
     }
 
-    .back{
+    .back{ 
         width: 100%;
         height: 100%;
 
         transform: translateZ(-160px) rotateX(25deg);  
         top: -15px; 
+        background-color: v.$color2;
     }   
 
 
@@ -63,15 +64,15 @@
 
 
         transform: rotateX(90deg) translateZ(126px);
-        background-color: v.$brown1;
-    }
+        background-color: v.$color2;
+    } 
 
     .top{
         width: 100%;
         height: 370px;
 
         transform: rotateX(90deg) translateZ(186px);
-        background-color: v.$brown1;
+        background-color: v.$color1;
 
     }
 
@@ -90,7 +91,7 @@
 
         transform: rotateY(90deg) translateZ(-35px);   
         bottom: 0;       
-        background-color: v.$brown1;         
+        background-color: v.$color2;         
     }       
     .back-left{
         width: 110%;
@@ -98,11 +99,11 @@
 
         transform: rotateY(90deg) translateZ(30px);   
         bottom: 0;   
-        background-color: v.$brown1;             
-    } 
+        background-color: v.$color2;             
+    }  
 
  
-
+ 
     .back-front{
         width: 110%;
         height: 280%;
@@ -111,16 +112,18 @@
         
         bottom: 0;
 
+        background-color: v.$color2; 
+ 
     }  
 
     .back-back{
         width: 110%;
-        height: 280%;
+        height: 280%; 
 
         transform: translateZ(35px); 
         bottom: 0;
-        background-color: v.$brown1; 
-    }
+        background-color: v.$color2; 
+    } 
 
 
     .back-bottom{
@@ -128,6 +131,6 @@
         height: 110%;
 
         transform: rotateX(-90deg); 
-        background-color: v.$brown1; 
-    } 
+        background-color: v.$color2; 
+    }   
 }  
